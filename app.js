@@ -1,15 +1,21 @@
+import { getRandomThrow } from './get-random-throw.js';
 // import functions and grab DOM elements
-const throwPaper = document.querySelector('#paper');
-const throwScissors = document.querySelector('#scissors');
-const throwRock = document.querySelector('#paper');
+const throwRock = document.querySelector('#rock-input');
+const throwScissors = document.querySelector('#scissors-input');
+const throwPaper = document.querySelector('#paper-input');
 const playGame = document.getElementById('submit');
 const results = document.getElementById('results-span');
 const games = document.getElementById('games-span');
-const sets = document.getElementById('sets-span');
-
+const userInput = document.getElementById('user-input-span');
 // initialize state
-let setsWon = 0;
 let gamesWon = 0;
 let gamesPlayed = 0;
-
+console.log(gamesWon, gamesPlayed);
 // set event listeners to update state and DOM
+playGame.addEventListener('click', () => {
+    //throw hand and find out what was thrown
+    gamesPlayed++;
+    const handThrown = getRandomThrow();
+    return results.textContent = `computer threw ${handThrown}`; 
+    
+});

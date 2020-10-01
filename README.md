@@ -15,7 +15,7 @@ Build a R-P-S Game, user vs computer. Track win/lose/draw record.
 
 ---
 
-## Standard Setup Process
+<!-- ## Standard Setup Process
 
 1. Create a repo called `lab-03-rock-paper-scissors` on Github
     - make sure to click add a `README.md`
@@ -30,8 +30,8 @@ Build a R-P-S Game, user vs computer. Track win/lose/draw record.
 
 ### Make a New Repo
 
-Make the repo on github first, then clone it locally and work from there. Call it `lab-03-rock-paper-scissors`.
-
+Make the repo on github first, then clone it locally and work from there. Call it `lab-03-rock-paper-scissors`. -->
+<!-- 
 ### Design the App
 
 Using HTML and CSS, design the look and feel of the rock, paper, scissors game. At a minimum you will need:
@@ -41,7 +41,7 @@ Using HTML and CSS, design the look and feel of the rock, paper, scissors game. 
 1. Radio buttons _with same name for grouping_ for choosing rock, paper, or scissors (images anyone?)
 1. Button for "Play" 
 1. Display of wins and losses and draws
-1. Display of result of each game (can be text and/or images), should indicate what the computer threw and what the result was (win, loss, draw)
+1. Display of result of each game (can be text and/or images), should indicate what the computer threw and what the result was (win, loss, draw) -->
 
 ### Computer Throw
 
