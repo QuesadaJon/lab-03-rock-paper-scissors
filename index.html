@@ -27,11 +27,9 @@
             </h2>
                 <ul>
                     <li>Select rock, paper, or scissors</li>
-                    <li>The rules are best of five</li>
-                    <li>Win three out of five to win the set</li>
                     <li>Good luck!</li><hr/>
                 </ul>
-            <button>click</button>
+            <button id="reset-button">Reset</button>
 <!-- 1. Page layout (title, header, footer?, etc.)
 1. Explain the rules (paper beats rock, rock beats scissors, scissors beats papers), an HTML List might be a good semantic choice.
 1. Radio buttons _with same name for grouping_ for choosing rock, paper, or scissors (images anyone?)
@@ -40,16 +38,17 @@
 1. Display of result of each game (can be text and/or images), should indicate what the computer threw and what the result was (win, loss, draw) -->
         </section>
         <span class='rock-paper-scissors'>
-            <input type="radio" name='rock' value='rock'/>
-            <input type="radio" name='scissors' value='scissors'/>
-            <input type="radio" name='paper' value='paper'/>
+            <label>Rock<input type="radio" name='rps-choice' value='rock' checked></label>
+            <label>Paper<input type="radio" name='rps-choice' value='scissors'/></label>
+            <label>Scissors<input type="radio" name='rps-choice' value='paper'/></label>
             <button class='button' id='submit'>Submit</button>
         </span>
         <section>
             <span id='results-span'></span>
-            <span id='games-span'></span></br>
-            <span id='win-counter'></span>
-            
+            Total: <span id='games-span'>0</span><br>
+            Wins: <span id='win-counter'>0</span><br>
+            Times Reset: <span id='reset-counter'>0</span>
+
         </section>
 
 
