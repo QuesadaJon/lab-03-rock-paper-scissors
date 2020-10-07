@@ -21,7 +21,7 @@ playGame.addEventListener('click', () => {
     const playerHand = playerHandThrown.value;
 
     const gameResult = didUserWin(playerHand, computerHandThrown);
-console.log(gameResult, playerHand, computerHandThrown);
+    console.log(gameResult, playerHand, computerHandThrown);
     results.textContent = `computer threw ${computerHandThrown}, you ${gameResult}`; 
 
     gamesPlayed++;
@@ -45,4 +45,4 @@ resetButton.addEventListener('click', () => {
     games.textContent = gamesPlayed;
 
 
-})
+});

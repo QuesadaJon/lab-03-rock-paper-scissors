@@ -14,34 +14,14 @@ export function getRandomThrow() {
 }
 
 // Goal is to generate a number between 1 & 3 and assign it a rock, paper, scissors value
-
 export function didUserWin(playerHand, computerHand) {
-    if (playerHand === 'rock' && computerHand === 'rock') {
-        return 'draw';
-    }
-    if (playerHand === 'rock' && computerHand === 'paper') {
-        return 'lose';
-    }
-    if (playerHand === 'rock' && computerHand === 'scissors') {
-        return 'win';
-    }
-    if (playerHand === 'paper' && computerHand === 'rock') {
-        return 'win';
-    }
-    if (playerHand === 'paper' && computerHand === 'paper') {
-        return 'draw';
-    }
-    if (playerHand === 'paper' && computerHand === 'scissors') {
-        return 'lose';
-    }
-    if (playerHand === 'scissors' && computerHand === 'rock') {
-        return 'lose';
-    }
-    if (playerHand === 'scissor' && computerHand === 'paper') {
-        return 'win';
-    }
-    if (playerHand === 'scissor' && computerHand === 'scissors') {
-        return 'draw';
-    }
 
+    if (playerHand === 'rock' && computerHand === 'paper' || playerHand === 'scissors' && computerHand === 'rock' || playerHand === 'paper' && computerHand === 'scissors') {
+        return 'lose';
+    }
+    if (playerHand === 'rock' && computerHand === 'scissors' || playerHand === 'paper' && computerHand === 'rock' || playerHand === 'scissor' && computerHand === 'paper') {
+        return 'win';
+    } 
+    else {
+        return 'draw';}
 }
