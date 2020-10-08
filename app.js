@@ -1,4 +1,4 @@
-import { getRandomThrow, didUserWin } from './get-random-throw.js';
+import { numberConverter, didUserWin } from './get-random-throw.js';
 // import functions and grab DOM elements
 const playGame = document.getElementById('submit');
 const results = document.getElementById('results-span');
@@ -16,7 +16,7 @@ console.log(timesReset, gamesPlayed);
 // set event listeners to update state and DOM
 playGame.addEventListener('click', () => {
     //throw hand and find out what was thrown
-    const computerHandThrown = getRandomThrow();
+    const computerHandThrown = numberConverter(Math.ceil(Math.random() * 3));
     const playerHandThrown = document.querySelector(':checked');
     const playerHand = playerHandThrown.value;
 

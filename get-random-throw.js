@@ -1,16 +1,12 @@
 // ### Computer Throw
-export function getRandomThrow() {
-    const randomNumber = Math.ceil(Math.random() * 3);
-    if (randomNumber === 1) {
+export function numberConverter(number) {
+
+    if (number === 1) {
         return 'rock';
-    }
-    if (randomNumber === 2) {
+    } if (number === 2) {
         return 'paper';
+    } else { return 'scissors';
     }
-    if (randomNumber === 3) {
-        return 'scissors';
-    }
-    return randomNumber;
 }
 
 // Goal is to generate a number between 1 & 3 and assign it a rock, paper, scissors value
